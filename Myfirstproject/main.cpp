@@ -4,7 +4,7 @@ int main() {
     cout << "Hello, World!! \n";
     int a = 7;
     int b = 8;
-    if (a==7)
+    if (a==8)
     {
         cout << a;
     }
