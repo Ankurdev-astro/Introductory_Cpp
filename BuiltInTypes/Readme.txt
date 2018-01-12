@@ -1,0 +1,1 @@
+ In case of wrong input from the user, some of the inputs are skipped and basically the input overflows from the assigned variable to the next one, causing the program to give undesired output
