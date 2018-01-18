@@ -17,5 +17,4 @@ int main() {
     //cout << "The value of integer1/integer2 = " << g;
     cout << "The value of integer1/integer2 = " << div;
     return 0;
-
 }
