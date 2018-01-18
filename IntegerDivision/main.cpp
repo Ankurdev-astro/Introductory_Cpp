@@ -9,11 +9,13 @@ int main() {
     cin >> a;
     cout << " Enter another integer" << endl;
     cin >> b;
-    float f;
-    float g;
-    f = a; // forcing conversion
-    g = f/b;
-    cout << "The value of integer1/integer2 = " << g;
+    //float f;
+    //float g;
+    //f = a; // forcing conversion
+    //g = f/b;
+    float div = float(a)/b;
+    //cout << "The value of integer1/integer2 = " << g;
+    cout << "The value of integer1/integer2 = " << div;
     return 0;
 
 }
