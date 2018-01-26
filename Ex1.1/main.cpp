@@ -8,6 +8,6 @@ int main() {
     string str;
     //cout << "Enter a word" << endl;
     cin >> str;
-    cout <<str;
+    cout << str;
     return 0;
 }
