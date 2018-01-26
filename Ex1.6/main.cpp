@@ -10,7 +10,7 @@ int main() {
     for(i=1;i<=n;i++)
     {
         val = i*num;
-        cout << i << " x " << num << " = " << val <<endl;
+        cout << i << " x " << num << " = " << val << endl;
     }
     return 0;
 }

@@ -12,5 +12,5 @@ int main() {
     cin >> f4;
     cin >> f5;
     cout << f1 + f2 + f3 + f4 + f5;
-    return 0;
+    return 0 ;
 }
