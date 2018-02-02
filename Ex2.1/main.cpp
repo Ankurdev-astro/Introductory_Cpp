@@ -33,6 +33,8 @@ int main(int argc, char * argv[]) {
 */
 
 	// uncomment the following lines to see a working example of how to draw lines
+
+    // for 2 lines
 	window.startNewLine(250,0);
     window.penRotateDegrees(90);
     //window.penSetAngle(0);
@@ -44,20 +46,35 @@ int main(int argc, char * argv[]) {
     window.penSetAngle(0);
     window.penForward(500);
     window.stopCurrentLine();
-
+// for triangle
     float x,y;
     x = (500-200.0)/2.0;
     y = 250 - 100/tan(rad(60));
     int i;
     window.startNewLine(x,y);
-    for (i=0;i<=3;i++)
+    for (i=0;i<3;i++)
         {
             window.penForward(200);
             window.penRotateDegrees(120);
         }
     window.stopCurrentLine();
+// for heptagon
+    float r, theta, n;
+    n = 7;
+    theta = float((n-2)*180)/n;
+    r = 200/(2*sin(M_PI/n));
+    x = 250 - r*cos(rad(theta/2));
+    y = 250 - r*sin(rad(theta/2));
+    window.startNewLine(x,y);
+    window.penSetAngle(0);
 
+   for (i=0;i<7;i++)
+    {
+        window.penForward(200);
+        window.penRotateDegrees(180-theta);
+    }
 
+    window.stopCurrentLine();
 
 
 	// display the window
