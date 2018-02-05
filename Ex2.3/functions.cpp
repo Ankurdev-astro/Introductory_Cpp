@@ -18,7 +18,7 @@ void makePolygon(SPA::Window & window, int sides, int length, int x, int y)
         window.startNewLine(x,y);
         window.penSetAngle(0);
 
-        for (int i=0;i<len;i++)
+        for (int i=0;i<n;i++)
         {
             window.penForward(len);
             window.penRotateDegrees(180-theta);
