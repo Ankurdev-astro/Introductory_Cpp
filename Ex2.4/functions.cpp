@@ -13,13 +13,12 @@ void makeInscribedPolygon (SPA::Window & window, int sides, float radius, int x,
         len = r*(2*sin(M_PI/n));
         theta = float((n-2)*180)/n;
         rad = (theta*M_PI)/180;
-        //r = len/(2*sin(M_PI/n));
         x = x - r*cos(rad/2);
         y = y - r*sin(rad/2);
         window.startNewLine(x,y);
         window.penSetAngle(0);
 
-        for (int i=0;i<len;i++)
+        for (int i=0;i<n;i++)
         {
             window.penForward(len);
             window.penRotateDegrees(180-theta);

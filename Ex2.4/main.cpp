@@ -14,6 +14,8 @@ int main(int argc, char * argv[]) {
         {
             makeInscribedPolygon(window,i,200,300,300);
         }
+
+    makeInscribedPolygon(window,2*M_PI*200,200,300,300); // makes circle
 	return Fl::run();
 }
 
