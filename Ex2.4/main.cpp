@@ -6,7 +6,7 @@
 
 
 int main(int argc, char * argv[]) {
-// create a new window of size 500 x 500 pixels
+// create a new window of size 600 x 600 pixels
 // the top left corner of the window is (0,0)
 	SPA::Window window(600,600,"My Test");
 
