@@ -17,13 +17,19 @@ int main(int argc, char * argv[]) {
     float sideLength;
     float n,theta,r,x,y;
     cout << "Enter the number of sides of shape: \n ";
-    do
+    do {
         cin >> nSides;
-    while(nSides<=2);
+        if (cin.fail() == 1)
+            exit(0);
+    }while(nSides<=2);
+
     cout << "Enter the side length: \n ";
-    do
+    do {
         cin >> sideLength;
-    while(sideLength<=0);
+        if (cin.fail() == 1)
+            exit(0);
+    }while(sideLength<=0);
+
     n = nSides;
     theta = float((n-2)*180)/n;
     r = sideLength/(2*sin(M_PI/n));
