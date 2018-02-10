@@ -7,7 +7,7 @@ int main() {
     cin >> p;
     cout << p <<endl;
     int &x = p; // x is now a reference variable to p
-    cout << &x <<endl; //&x is the address
+    cout << &x <<endl << x <<endl; //&x is the address
     p =  p + 10;
     cout << p << " " << x;
 
