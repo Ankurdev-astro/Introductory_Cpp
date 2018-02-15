@@ -6,8 +6,23 @@
 #include <fstream>
 #include <vector>
 #include <iostream>
+using namespace std;
 
-void readPointsFromStream(int n, std::vector<float> &xvec, std::vector<float> &yvec, std::ifstream &f)
+void readPointsFromStream(int n, std::ifstream &f, std::vector<float> &xvec, std::vector<float> &yvec)
 {
-    std::cout<<n;
+    //std::cout<<n;
+    float x,y;
+    while (f.eof()==0)
+    {
+        for (int i = 1; i <= n; i++)
+        {
+            f >> x >> y;
+            xvec.push_back(x);
+            yvec.push_back(y);
+            if((f.eof()==1) || (f.bad()==1) || (f.fail()==1))
+                break;
+        }
+        break;
+    }
+
 }

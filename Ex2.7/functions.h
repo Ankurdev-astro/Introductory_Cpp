@@ -7,5 +7,5 @@
 #include <fstream>
 #include <vector>
 
-void readPointsFromStream(int n, std::vector<float> &xvec, std::vector<float> &yvec, std::ifstream &f);
+void readPointsFromStream(int n, std::ifstream &f, std::vector<float> &xvec, std::vector<float> &yvec);
 #endif //EX2_7_FUNCTIONS_H

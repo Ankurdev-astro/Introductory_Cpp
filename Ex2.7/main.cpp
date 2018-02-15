@@ -18,7 +18,12 @@ int main(int argc, char * argv[]) {
     vector<float> yvec;
     ifstream Input("G:/points3.dat");
     Input >> n;
-    readPointsFromStream(n,xvec,yvec,Input);
+    readPointsFromStream(n,Input,xvec,yvec);
+
+    for(int j =0; j<n; j++ )
+    {
+        cout << xvec[j] << ", "<< yvec[j]<<endl; // Printing in x, y notation
+    }
 
 
 	// Add code here to draw things
@@ -34,7 +39,7 @@ int main(int argc, char * argv[]) {
 	 * window.addPoint(Point p) add a point to the current line
 	 * window.setLineColor(FL_Color c) set the colour for the next line
 */
-
+    Input.close();
 	// display the window
 	window.show(argc,argv);
 	// run the FLTK event loop - this allows you to move the window around etc
