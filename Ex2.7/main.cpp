@@ -17,16 +17,16 @@ int main(int argc, char * argv[]) {
     vector<float> xvec;
     vector<float> yvec;
     ifstream Input("G:/points3.dat");
-    Input >> n;
-    readPointsFromStream(n,Input,xvec,yvec);
-
-    for(int j =0; j<n; j++ )
+    while(Input.eof()==0)
     {
-        cout << xvec[j] << ", "<< yvec[j]<<endl; // Printing in x, y notation
+        Input >> n;
+        readPointsFromStream(n,Input,xvec,yvec);
+        drawPoints(window,xvec,yvec);
+        if(Input.eof()==1)
+            break;
     }
 
-
-	// Add code here to draw things
+    // Add code here to draw things
 
 	/*
 	 * Here are some of the options

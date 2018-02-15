@@ -6,6 +6,8 @@
 #define EX2_7_FUNCTIONS_H
 #include <fstream>
 #include <vector>
+#include "Window.h"
 
 void readPointsFromStream(int n, std::ifstream &f, std::vector<float> &xvec, std::vector<float> &yvec);
+void drawPoints(SPA::Window &window, const std::vector<float> &xvec, const std::vector<float> &yvec);
 #endif //EX2_7_FUNCTIONS_H
