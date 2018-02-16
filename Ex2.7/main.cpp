@@ -26,6 +26,13 @@ int main(int argc, char * argv[]) {
             break;
     }
 
+    //For part B, printing first 5 pairs from file
+    for(int j =0; j<n; j++ )
+    {
+        cout << xvec[j] << ", "<< yvec[j]<<endl; // Printing in x, y notation
+    }
+
+
     // Add code here to draw things
 
 	/*
