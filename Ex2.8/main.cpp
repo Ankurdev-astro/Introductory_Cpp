@@ -32,11 +32,13 @@ int main(int argc, char * argv[]) {
 	line->addPoint(Point(100,100));
 	line->addPoint(Point(-100,100));
 	line->addPoint(Point(-100,-100));
-    line2-> addPoint(Point(-50,-50));
-    line2-> addPoint(Point(50,-50));
-    line2-> addPoint(Point(50,50));
-    line2-> addPoint(Point(-50,50));
-    line2-> addPoint(Point(-50,-50));
+
+    line2-> addPoint(Point(0,-50));
+    line2-> addPoint(Point(100,-50));
+    line2-> addPoint(Point(100,50));
+    line2-> addPoint(Point(0,50));
+    line2-> addPoint(Point(0,-50));
+
 	// add this line to the shape
 	shape->addLine(line);
     shape2->addLine(line2);

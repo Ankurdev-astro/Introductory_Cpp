@@ -5,8 +5,8 @@
       <sourceFolder url="file://$MODULE_DIR$/Window.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Shape.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Colours.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Window.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Colours.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Shape.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Line.h" isTestSource="false" />
@@ -15,14 +15,14 @@
     <orderEntry type="module-library">
       <library name="Header Search Paths">
         <CLASSES>
-          <root url="file://J:/Physics/Teaching/spa4321/MinGW/lib/gcc/mingw32/5.3.0/include" />
-          <root url="file://J:/Physics/Teaching/spa4321/MinGW/lib/gcc/mingw32/5.3.0/include-fixed" />
-          <root url="file://J:/Physics/Teaching/spa4321/MinGW/include" />
+          <root url="file://$MODULE_DIR$/../../../MinGW/lib/gcc/mingw32/5.3.0/include" />
+          <root url="file://$MODULE_DIR$/../../../MinGW/lib/gcc/mingw32/5.3.0/include-fixed" />
+          <root url="file://$MODULE_DIR$/../../../MinGW/include" />
         </CLASSES>
         <SOURCES>
-          <root url="file://J:/Physics/Teaching/spa4321/MinGW/lib/gcc/mingw32/5.3.0/include" />
-          <root url="file://J:/Physics/Teaching/spa4321/MinGW/lib/gcc/mingw32/5.3.0/include-fixed" />
-          <root url="file://J:/Physics/Teaching/spa4321/MinGW/include" />
+          <root url="file://$MODULE_DIR$/../../../MinGW/lib/gcc/mingw32/5.3.0/include" />
+          <root url="file://$MODULE_DIR$/../../../MinGW/lib/gcc/mingw32/5.3.0/include-fixed" />
+          <root url="file://$MODULE_DIR$/../../../MinGW/include" />
         </SOURCES>
       </library>
     </orderEntry>
