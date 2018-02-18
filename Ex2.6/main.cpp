@@ -12,44 +12,27 @@ int main(int argc, char * argv[]) {
 // the top left corner of the window is (0,0)
 	SPA::Window window(500,500,"My Test");
 
-	// Add code here to draw things
-
-	/*
-	 * Here are some of the options
-	 * window.startNewLine(float x, float y) start a new line from location (x,y)
-	 * window.setAngle(float angle) to set the initial ang of the pen in degrees
-	 * window.penRotateDegrees(float angle) rotate the pen in degrees
-	 * window.penForward(float distance) move the pen forward
-	 * window.stopCurrentLine() to stop the current line
-	 * window.addPointfloat x, float y) add a point to the current line
-	 * window.addPoint(Point p) add a point to the current line
-	 * window.setLineColor(FL_Color c) set the colour for the next line
-*/
-    ifstream Input2("G:/points2.dat");
-    float x,y;
+	ifstream Input2("G:/points2.dat");  //opens file and creats file object Input2
+    float x,y; //declaring float variables
     int npoints;
-    while (Input2.eof()== 0)
+    while (Input2.eof()== 0)  //checks for end of file flag
     {
-        Input2 >>npoints;
-        //cout << npoints<<endl;
-       // window.addPoint(x,y);
-        break;
+        Input2 >>npoints;  // inputs the first number in the file
+        break;  // breaks loop after inputing a single number
     }
-    window.stopCurrentLine();
 
     while (Input2.eof()==0)
     {
-        for (int i = 1; i <= npoints; i++)
+        for (int i = 1; i <= npoints; i++)    // loop for inputing npoints number of pairs of x,y
         {
             Input2 >> x >> y;
-            //cout <<x<<y<<endl;
             window.addPoint(x, y);
-            if(Input2.eof()==1)
-                break;
+            if(Input2.eof()==1)      // checks if flag of end of file is raised
+                break;    //breaks loop if flag is raised
         }
         break;
     }
-    Input2.close();
+    Input2.close();     //closes file
     window.stopCurrentLine();
 
 
