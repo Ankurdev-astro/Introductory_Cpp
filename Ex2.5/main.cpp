@@ -4,39 +4,24 @@
 #include "Colours.h"
 using namespace std;
 
-
+//Section C/HW/Worksheet 2/ Ex 5
 
 int main(int argc, char * argv[]) {
 // create a new window of size 500 x 500 pixels
 // the top left corner of the window is (0,0)
 	SPA::Window window(500,500,"My Test");
-  //  window.addpoint()
-    ifstream Input("G:/points.dat");
-    int done=1;
+
+    ifstream Input("G:/points.dat"); //opens file with file object Input
     float x,y;
-    while (Input.eof()== 0)
+    while (Input.eof()== 0) //loop condition to check if end of file flag is raised and set to 1
     {
-        Input >>x>>y;
-        //cout <<x<<y<<endl;
-        window.addPoint(x,y);
+        Input >>x>>y; //File objects inputs 2 numbers from file
+        window.addPoint(x,y); //adds new point at position x,y and draws a line
 
     }
-    window.stopCurrentLine();
-    // Add code here to draw things
-
-	/*
-	 * Here are some of the options
-	 * window.startNewLine(float x, float y) start a new line from location (x,y)
-	 * window.setAngle(float angle) to set the initial ang of the pen in degrees
-	 * window.penRotateDegrees(float angle) rotate the pen in degrees
-	 * window.penForward(float distance) move the pen forward
-	 * window.stopCurrentLine() to stop the current line
-	 * window.addPointfloat x, float y) add a point to the current line
-	 * window.addPoint(Point p) add a point to the current line
-	 * window.setLineColor(FL_Color c) set the colour for the next line
-*/
-
-	// display the window
+    window.stopCurrentLine(); //stops drawing
+    Input.close(); //closes file
+    // display the window
 	window.show(argc,argv);
 	// run the FLTK event loop - this allows you to move the window around etc
 	// and ultimately set up click events.
