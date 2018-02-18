@@ -7,5 +7,5 @@
 
 #include "Window.h"
 
-void makePolygon(SPA::Window & window, int sides, int length, int x, int y);
+void makePolygon(SPA::Window & window, int sides, int length, int x, int y); //function declaration
 #endif //XXXXXX_FUNCTIONS_H
