@@ -7,5 +7,5 @@
 
 #include "Window.h"
 
-void makeInscribedPolygon (SPA::Window & window, int sides, float radius, int x, int y);
+void makeInscribedPolygon (SPA::Window & window, int sides, float radius, int x, int y); //declaring function
 #endif //XXXXXX_FUNCwTIONS_H
