@@ -14,16 +14,16 @@ int main(int argc, char * argv[]) {
 // the top left corner of the window is (0,0)
 	SPA::Window window(500,500,"My Test");
     int n;
-    vector<float> xvec;
-    vector<float> yvec;
-    ifstream Input("G:/points3.dat");
-    while(Input.eof()==0)
+    vector<float> xvec; //declares vector xvec
+    vector<float> yvec; //declares vector yvec
+    ifstream Input("G:/points3.dat"); //creates file object Input and opens the file from path
+    while(Input.eof()==0)  //completes the loop if end of file flag is not raised
     {
         Input >> n;
-        readPointsFromStream(n,Input,xvec,yvec);
+        readPointsFromStream(n,Input,xvec,yvec); //calls function
         drawPoints(window,xvec,yvec);
-        if(Input.eof()==1)
-            break;
+        if(Input.eof()==1)  //checks if end of file flag is raised
+            break;  //breaks loop if eof is set to 1
     }
 
     //For part B, printing first 5 pairs from file
@@ -33,20 +33,7 @@ int main(int argc, char * argv[]) {
     }
 
 
-    // Add code here to draw things
-
-	/*
-	 * Here are some of the options
-	 * window.startNewLine(float x, float y) start a new line from location (x,y)
-	 * window.setAngle(float angle) to set the initial ang of the pen in degrees
-	 * window.penRotateDegrees(float angle) rotate the pen in degrees
-	 * window.penForward(float distance) move the pen forward
-	 * window.stopCurrentLine() to stop the current line
-	 * window.addPointfloat x, float y) add a point to the current line
-	 * window.addPoint(Point p) add a point to the current line
-	 * window.setLineColor(FL_Color c) set the colour for the next line
-*/
-    Input.close();
+    Input.close(); //closes file
 	// display the window
 	window.show(argc,argv);
 	// run the FLTK event loop - this allows you to move the window around etc
